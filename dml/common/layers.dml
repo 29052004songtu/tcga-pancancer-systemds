@@ -1,0 +1,30 @@
+# Standalone DML Helper Layers for TCGA Pan-Cancer Inference
+
+stable_softmax = function(matrix[double] logits)
+    return (matrix[double] probs) {
+    shifted = logits - rowMaxs(logits);
+    exp_x = exp(shifted);
+    probs = exp_x / rowSums(exp_x);
+}
+
+apply_prior_adjustment = function(matrix[double] P_raw, matrix[double] class_priors, double tau)
+    return (matrix[double] P_adj, matrix[double] yhat) {
+    if (tau == 0.0) {
+        P_adj = P_raw;
+    } else {
+        log_P = log(P_raw + 1e-15);
+        log_pri = log(class_priors + 1e-15);
+        adj_logits = log_P - tau * log_pri;
+        shifted = adj_logits - rowMaxs(adj_logits);
+        exp_x = exp(shifted);
+        P_adj = exp_x / rowSums(exp_x);
+    }
+    yhat = rowIndexMax(P_adj);
+}
+
+batch_norm_inference = function(matrix[double] X, matrix[double] gamma, matrix[double] beta,
+                               matrix[double] ema_mean, matrix[double] ema_var, double eps)
+    return (matrix[double] out) {
+    std = sqrt(ema_var + eps);
+    out = ((X - ema_mean) / std) * gamma + beta;
+}

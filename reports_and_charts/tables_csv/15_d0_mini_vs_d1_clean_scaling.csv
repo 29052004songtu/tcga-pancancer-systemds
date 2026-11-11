@@ -1,0 +1,7 @@
+model_label,d0_run_id,d0_train_f1,d0_val_f1,d0_test_acc,d0_test_f1,d0_overfit_gap,d0_exec_sec,d1_run_id,d1_train_f1,d1_val_f1,d1_test_acc,d1_test_f1,d1_overfit_gap,d1_exec_sec,delta_test_f1_pp,gap_reduction_pct
+M1_multiLogReg (tau=0.0),D0_F0_M1_reg1.0_tau0.0_C2,100.0,86.623,88.0,86.934,13.066,14.847,D1_F0_M1_reg1.0_tau0.0_C3,100.0,94.716,96.643,95.288,4.712,36.214,8.354,63.94
+M1_multiLogReg (tau=0.5 / Champ),D0_F0_M1_reg1.0_tau0.5_C2,100.0,86.421,90.667,89.719,10.281,14.106,D1_Wave4_Champion_M1_multiLogReg,100.0,94.763,96.578,95.178,4.822,60.7,5.459,53.1
+M2_msvm (Best),Ablation_C3_openblas_M2_msvm,100.0,88.211,90.667,89.084,10.916,2.829,D1_F0_M2_reg100.0_T0.25_b10_tau0.0_C3,100.0,95.238,96.966,95.665,4.335,60.245,6.581,60.29
+M3_mlp_lowrank,mini_benchmark_results,98.938,76.18,76.0,71.759,27.179,1.555,D1_F2_5000_M3_R48_a0.35_drop0.35_l2_1e-3_C3,99.418,94.764,96.062,95.278,4.14,91.727,23.519,84.77
+M4_random_forest,mini_benchmark_results,33.28,18.215,20.0,15.406,17.873,7.094,D1_F4_rpca128_M4_rf_t64_d16_b16_C3,90.982,76.866,84.571,79.226,11.756,36.342,63.82,34.22
+M6_ensemble,D0_F0_M6_ensemble_w1_0.5_w2_0.5_tau0.5,100.0,86.623,90.667,89.719,10.281,0.702,D1_Wave4_M6_M1_M3_M5_w0.2_0.4_0.4_tau0.0,100.0,95.611,96.772,95.546,4.454,1.434,5.827,56.68

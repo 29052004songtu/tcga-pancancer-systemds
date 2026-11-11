@@ -1,0 +1,222 @@
+model_tag,slice_axis,slice_name,sample_count,accuracy,secondary_metric_name,secondary_metric_val,tertiary_metric_name,tertiary_metric_val
+M1_Champ,Rarity_Tier,Abundant,1051,97.24,macro_f1,97.925,balanced_accuracy,96.931
+M1_Champ,Rarity_Tier,Moderate,412,95.15,macro_f1,96.574,balanced_accuracy,94.177
+M1_Champ,Rarity_Tier,Rare,86,95.35,macro_f1,96.722,balanced_accuracy,94.038
+M1_Champ,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,94.12,combined_organ_accuracy,98.69,details,"LUAD->LUSC: 4, LUSC->LUAD: 3"
+M1_Champ,Histological_Cluster,Colorectal (COAD vs READ),92,81.52,combined_organ_accuracy,100.0,details,"COAD->READ: 7, READ->COAD: 10"
+M1_Champ,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,94.03,combined_organ_accuracy,98.51,details,Rare KICH Recall: 80.0% (8/10)
+M1_Champ,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,98.88,combined_organ_accuracy,100.0,details,Rare UCS Recall: 100.0% (9/9)
+M1_Champ,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,98.86,combined_organ_accuracy,98.86,details,Rare CHOL Recall: 80.0% (4/5)
+M1_Champ,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,95.59,combined_organ_accuracy,95.59,details,Keratinizing Squamous Combined Acc: 95.6%
+M1_Champ,Sample_Type,Primary Tumor (01/03),1487,96.44,error_count,53.0,,
+M1_Champ,Sample_Type,Metastatic (06),60,100.0,error_count,0.0,,
+M1_Champ,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M1_Champ,Batch_Tier,Tier 0,1291,96.82,error_count,41.0,,
+M1_Champ,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M1_Champ,Batch_Tier,Tier 2,131,93.89,error_count,8.0,,
+M1_Champ,Batch_Tier,Tier 3,93,95.7,error_count,4.0,,
+M1_Champ,Batch_Tier,Tier 4,31,100.0,error_count,0.0,,
+M2_Champ,Rarity_Tier,Abundant,1051,97.24,macro_f1,97.941,balanced_accuracy,96.972
+M2_Champ,Rarity_Tier,Moderate,412,95.87,macro_f1,97.031,balanced_accuracy,94.895
+M2_Champ,Rarity_Tier,Rare,86,94.19,macro_f1,95.987,balanced_accuracy,92.65
+M2_Champ,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,94.12,combined_organ_accuracy,99.35,details,"LUAD->LUSC: 4, LUSC->LUAD: 4"
+M2_Champ,Histological_Cluster,Colorectal (COAD vs READ),92,81.52,combined_organ_accuracy,98.91,details,"COAD->READ: 7, READ->COAD: 9"
+M2_Champ,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,94.03,combined_organ_accuracy,98.51,details,Rare KICH Recall: 80.0% (8/10)
+M2_Champ,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,97.75,combined_organ_accuracy,98.88,details,Rare UCS Recall: 88.9% (8/9)
+M2_Champ,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,98.86,combined_organ_accuracy,98.86,details,Rare CHOL Recall: 80.0% (4/5)
+M2_Champ,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,95.59,combined_organ_accuracy,95.59,details,Keratinizing Squamous Combined Acc: 95.6%
+M2_Champ,Sample_Type,Primary Tumor (01/03),1487,96.57,error_count,51.0,,
+M2_Champ,Sample_Type,Metastatic (06),60,100.0,error_count,0.0,,
+M2_Champ,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M2_Champ,Batch_Tier,Tier 0,1291,96.82,error_count,41.0,,
+M2_Champ,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M2_Champ,Batch_Tier,Tier 2,131,95.42,error_count,6.0,,
+M2_Champ,Batch_Tier,Tier 3,93,95.7,error_count,4.0,,
+M2_Champ,Batch_Tier,Tier 4,31,100.0,error_count,0.0,,
+M2_reg100,Rarity_Tier,Abundant,1051,97.53,macro_f1,98.119,balanced_accuracy,97.305
+M2_reg100,Rarity_Tier,Moderate,412,96.12,macro_f1,97.142,balanced_accuracy,95.109
+M2_reg100,Rarity_Tier,Rare,86,94.19,macro_f1,95.987,balanced_accuracy,92.65
+M2_reg100,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,94.12,combined_organ_accuracy,99.35,details,"LUAD->LUSC: 4, LUSC->LUAD: 4"
+M2_reg100,Histological_Cluster,Colorectal (COAD vs READ),92,82.61,combined_organ_accuracy,100.0,details,"COAD->READ: 7, READ->COAD: 9"
+M2_reg100,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,94.78,combined_organ_accuracy,98.51,details,Rare KICH Recall: 80.0% (8/10)
+M2_reg100,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,97.75,combined_organ_accuracy,98.88,details,Rare UCS Recall: 88.9% (8/9)
+M2_reg100,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,98.86,combined_organ_accuracy,98.86,details,Rare CHOL Recall: 80.0% (4/5)
+M2_reg100,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,95.59,combined_organ_accuracy,95.59,details,Keratinizing Squamous Combined Acc: 95.6%
+M2_reg100,Sample_Type,Primary Tumor (01/03),1487,96.84,error_count,47.0,,
+M2_reg100,Sample_Type,Metastatic (06),60,100.0,error_count,0.0,,
+M2_reg100,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M2_reg100,Batch_Tier,Tier 0,1291,97.06,error_count,38.0,,
+M2_reg100,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M2_reg100,Batch_Tier,Tier 2,131,96.18,error_count,5.0,,
+M2_reg100,Batch_Tier,Tier 3,93,95.7,error_count,4.0,,
+M2_reg100,Batch_Tier,Tier 4,31,100.0,error_count,0.0,,
+M3_Champ_W4,Rarity_Tier,Abundant,1051,95.53,macro_f1,96.489,balanced_accuracy,94.857
+M3_Champ_W4,Rarity_Tier,Moderate,412,97.33,macro_f1,98.139,balanced_accuracy,96.709
+M3_Champ_W4,Rarity_Tier,Rare,86,94.19,macro_f1,94.986,balanced_accuracy,91.538
+M3_Champ_W4,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,92.81,combined_organ_accuracy,100.0,details,"LUAD->LUSC: 6, LUSC->LUAD: 5"
+M3_Champ_W4,Histological_Cluster,Colorectal (COAD vs READ),92,81.52,combined_organ_accuracy,100.0,details,"COAD->READ: 10, READ->COAD: 7"
+M3_Champ_W4,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,91.79,combined_organ_accuracy,98.51,details,Rare KICH Recall: 80.0% (8/10)
+M3_Champ_W4,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,98.88,combined_organ_accuracy,100.0,details,Rare UCS Recall: 100.0% (9/9)
+M3_Champ_W4,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,96.59,combined_organ_accuracy,97.73,details,Rare CHOL Recall: 60.0% (3/5)
+M3_Champ_W4,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,96.92,combined_organ_accuracy,96.92,details,Keratinizing Squamous Combined Acc: 96.9%
+M3_Champ_W4,Sample_Type,Primary Tumor (01/03),1487,95.76,error_count,63.0,,
+M3_Champ_W4,Sample_Type,Metastatic (06),60,100.0,error_count,0.0,,
+M3_Champ_W4,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M3_Champ_W4,Batch_Tier,Tier 0,1291,96.28,error_count,48.0,,
+M3_Champ_W4,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M3_Champ_W4,Batch_Tier,Tier 2,131,91.6,error_count,11.0,,
+M3_Champ_W4,Batch_Tier,Tier 3,93,95.7,error_count,4.0,,
+M3_Champ_W4,Batch_Tier,Tier 4,31,100.0,error_count,0.0,,
+M3_R48_W2,Rarity_Tier,Abundant,1051,95.53,macro_f1,96.49,balanced_accuracy,94.845
+M3_R48_W2,Rarity_Tier,Moderate,412,97.33,macro_f1,98.483,balanced_accuracy,97.084
+M3_R48_W2,Rarity_Tier,Rare,86,96.51,macro_f1,98.111,balanced_accuracy,96.538
+M3_R48_W2,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,92.16,combined_organ_accuracy,98.69,details,"LUAD->LUSC: 5, LUSC->LUAD: 5"
+M3_R48_W2,Histological_Cluster,Colorectal (COAD vs READ),92,81.52,combined_organ_accuracy,97.83,details,"COAD->READ: 12, READ->COAD: 3"
+M3_R48_W2,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,95.52,combined_organ_accuracy,97.76,details,Rare KICH Recall: 80.0% (8/10)
+M3_R48_W2,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,97.75,combined_organ_accuracy,100.0,details,Rare UCS Recall: 100.0% (9/9)
+M3_R48_W2,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,98.86,combined_organ_accuracy,98.86,details,Rare CHOL Recall: 100.0% (5/5)
+M3_R48_W2,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,95.59,combined_organ_accuracy,95.59,details,Keratinizing Squamous Combined Acc: 95.6%
+M3_R48_W2,Sample_Type,Primary Tumor (01/03),1487,95.9,error_count,61.0,,
+M3_R48_W2,Sample_Type,Metastatic (06),60,100.0,error_count,0.0,,
+M3_R48_W2,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M3_R48_W2,Batch_Tier,Tier 0,1291,96.75,error_count,42.0,,
+M3_R48_W2,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M3_R48_W2,Batch_Tier,Tier 2,131,88.55,error_count,15.0,,
+M3_R48_W2,Batch_Tier,Tier 3,93,95.7,error_count,4.0,,
+M3_R48_W2,Batch_Tier,Tier 4,31,100.0,error_count,0.0,,
+M3_Seed777,Rarity_Tier,Abundant,1051,96.38,macro_f1,97.053,balanced_accuracy,96.0
+M3_Seed777,Rarity_Tier,Moderate,412,95.63,macro_f1,96.793,balanced_accuracy,94.604
+M3_Seed777,Rarity_Tier,Rare,86,95.35,macro_f1,96.722,balanced_accuracy,94.038
+M3_Seed777,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,90.85,combined_organ_accuracy,98.69,details,"LUAD->LUSC: 8, LUSC->LUAD: 4"
+M3_Seed777,Histological_Cluster,Colorectal (COAD vs READ),92,82.61,combined_organ_accuracy,100.0,details,"COAD->READ: 6, READ->COAD: 10"
+M3_Seed777,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,94.03,combined_organ_accuracy,98.51,details,Rare KICH Recall: 80.0% (8/10)
+M3_Seed777,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,98.88,combined_organ_accuracy,100.0,details,Rare UCS Recall: 100.0% (9/9)
+M3_Seed777,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,98.86,combined_organ_accuracy,98.86,details,Rare CHOL Recall: 80.0% (4/5)
+M3_Seed777,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,95.15,combined_organ_accuracy,95.59,details,Keratinizing Squamous Combined Acc: 95.6%
+M3_Seed777,Sample_Type,Primary Tumor (01/03),1487,95.97,error_count,60.0,,
+M3_Seed777,Sample_Type,Metastatic (06),60,100.0,error_count,0.0,,
+M3_Seed777,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M3_Seed777,Batch_Tier,Tier 0,1291,96.36,error_count,47.0,,
+M3_Seed777,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M3_Seed777,Batch_Tier,Tier 2,131,92.37,error_count,10.0,,
+M3_Seed777,Batch_Tier,Tier 3,93,96.77,error_count,3.0,,
+M3_Seed777,Batch_Tier,Tier 4,31,100.0,error_count,0.0,,
+M4_RF_105D,Rarity_Tier,Abundant,1051,85.54,macro_f1,86.086,balanced_accuracy,83.276
+M4_RF_105D,Rarity_Tier,Moderate,412,82.28,macro_f1,81.801,balanced_accuracy,78.52
+M4_RF_105D,Rarity_Tier,Rare,86,83.72,macro_f1,82.986,balanced_accuracy,77.244
+M4_RF_105D,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,79.08,combined_organ_accuracy,88.89,details,"LUAD->LUSC: 4, LUSC->LUAD: 11"
+M4_RF_105D,Histological_Cluster,Colorectal (COAD vs READ),92,26.09,combined_organ_accuracy,30.43,details,"COAD->READ: 1, READ->COAD: 3"
+M4_RF_105D,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,91.79,combined_organ_accuracy,97.76,details,Rare KICH Recall: 80.0% (8/10)
+M4_RF_105D,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,87.64,combined_organ_accuracy,91.01,details,Rare UCS Recall: 33.3% (3/9)
+M4_RF_105D,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,80.68,combined_organ_accuracy,84.09,details,Rare CHOL Recall: 20.0% (1/5)
+M4_RF_105D,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,72.69,combined_organ_accuracy,83.7,details,Keratinizing Squamous Combined Acc: 83.7%
+M4_RF_105D,Sample_Type,Primary Tumor (01/03),1487,84.06,error_count,237.0,,
+M4_RF_105D,Sample_Type,Metastatic (06),60,96.67,error_count,2.0,,
+M4_RF_105D,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M4_RF_105D,Batch_Tier,Tier 0,1291,86.6,error_count,173.0,,
+M4_RF_105D,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M4_RF_105D,Batch_Tier,Tier 2,131,67.18,error_count,43.0,,
+M4_RF_105D,Batch_Tier,Tier 3,93,77.42,error_count,21.0,,
+M4_RF_105D,Batch_Tier,Tier 4,31,93.55,error_count,2.0,,
+M5_RBF_Champ,Rarity_Tier,Abundant,1051,97.53,macro_f1,98.182,balanced_accuracy,97.324
+M5_RBF_Champ,Rarity_Tier,Moderate,412,95.15,macro_f1,96.196,balanced_accuracy,93.886
+M5_RBF_Champ,Rarity_Tier,Rare,86,94.19,macro_f1,95.987,balanced_accuracy,92.65
+M5_RBF_Champ,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,93.46,combined_organ_accuracy,98.69,details,"LUAD->LUSC: 4, LUSC->LUAD: 4"
+M5_RBF_Champ,Histological_Cluster,Colorectal (COAD vs READ),92,82.61,combined_organ_accuracy,100.0,details,"COAD->READ: 4, READ->COAD: 12"
+M5_RBF_Champ,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,94.03,combined_organ_accuracy,97.76,details,Rare KICH Recall: 80.0% (8/10)
+M5_RBF_Champ,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,97.75,combined_organ_accuracy,100.0,details,Rare UCS Recall: 88.9% (8/9)
+M5_RBF_Champ,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,98.86,combined_organ_accuracy,98.86,details,Rare CHOL Recall: 80.0% (4/5)
+M5_RBF_Champ,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,95.15,combined_organ_accuracy,95.15,details,Keratinizing Squamous Combined Acc: 95.2%
+M5_RBF_Champ,Sample_Type,Primary Tumor (01/03),1487,96.57,error_count,51.0,,
+M5_RBF_Champ,Sample_Type,Metastatic (06),60,100.0,error_count,0.0,,
+M5_RBF_Champ,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M5_RBF_Champ,Batch_Tier,Tier 0,1291,96.9,error_count,40.0,,
+M5_RBF_Champ,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M5_RBF_Champ,Batch_Tier,Tier 2,131,93.89,error_count,8.0,,
+M5_RBF_Champ,Batch_Tier,Tier 3,93,96.77,error_count,3.0,,
+M5_RBF_Champ,Batch_Tier,Tier 4,31,100.0,error_count,0.0,,
+M5_Cosine,Rarity_Tier,Abundant,1051,97.43,macro_f1,98.145,balanced_accuracy,97.269
+M5_Cosine,Rarity_Tier,Moderate,412,96.36,macro_f1,97.529,balanced_accuracy,95.656
+M5_Cosine,Rarity_Tier,Rare,86,95.35,macro_f1,96.722,balanced_accuracy,94.038
+M5_Cosine,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,93.46,combined_organ_accuracy,98.69,details,"LUAD->LUSC: 4, LUSC->LUAD: 4"
+M5_Cosine,Histological_Cluster,Colorectal (COAD vs READ),92,85.87,combined_organ_accuracy,100.0,details,"COAD->READ: 5, READ->COAD: 8"
+M5_Cosine,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,92.54,combined_organ_accuracy,97.76,details,Rare KICH Recall: 80.0% (8/10)
+M5_Cosine,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,98.88,combined_organ_accuracy,100.0,details,Rare UCS Recall: 100.0% (9/9)
+M5_Cosine,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,98.86,combined_organ_accuracy,98.86,details,Rare CHOL Recall: 80.0% (4/5)
+M5_Cosine,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,96.04,combined_organ_accuracy,96.04,details,Keratinizing Squamous Combined Acc: 96.0%
+M5_Cosine,Sample_Type,Primary Tumor (01/03),1487,96.91,error_count,46.0,,
+M5_Cosine,Sample_Type,Metastatic (06),60,100.0,error_count,0.0,,
+M5_Cosine,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M5_Cosine,Batch_Tier,Tier 0,1291,96.98,error_count,39.0,,
+M5_Cosine,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M5_Cosine,Batch_Tier,Tier 2,131,96.18,error_count,5.0,,
+M5_Cosine,Batch_Tier,Tier 3,93,97.85,error_count,2.0,,
+M5_Cosine,Batch_Tier,Tier 4,31,100.0,error_count,0.0,,
+M6v_Wave4,Rarity_Tier,Abundant,1051,96.96,macro_f1,97.766,balanced_accuracy,96.641
+M6v_Wave4,Rarity_Tier,Moderate,412,95.63,macro_f1,96.588,balanced_accuracy,94.414
+M6v_Wave4,Rarity_Tier,Rare,86,95.35,macro_f1,96.722,balanced_accuracy,94.038
+M6v_Wave4,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,94.12,combined_organ_accuracy,99.35,details,"LUAD->LUSC: 4, LUSC->LUAD: 4"
+M6v_Wave4,Histological_Cluster,Colorectal (COAD vs READ),92,80.43,combined_organ_accuracy,100.0,details,"COAD->READ: 7, READ->COAD: 11"
+M6v_Wave4,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,92.54,combined_organ_accuracy,98.51,details,Rare KICH Recall: 80.0% (8/10)
+M6v_Wave4,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,98.88,combined_organ_accuracy,100.0,details,Rare UCS Recall: 100.0% (9/9)
+M6v_Wave4,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,98.86,combined_organ_accuracy,98.86,details,Rare CHOL Recall: 80.0% (4/5)
+M6v_Wave4,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,95.15,combined_organ_accuracy,95.15,details,Keratinizing Squamous Combined Acc: 95.2%
+M6v_Wave4,Sample_Type,Primary Tumor (01/03),1487,96.37,error_count,54.0,,
+M6v_Wave4,Sample_Type,Metastatic (06),60,100.0,error_count,0.0,,
+M6v_Wave4,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M6v_Wave4,Batch_Tier,Tier 0,1291,96.75,error_count,42.0,,
+M6v_Wave4,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M6v_Wave4,Batch_Tier,Tier 2,131,93.89,error_count,8.0,,
+M6v_Wave4,Batch_Tier,Tier 3,93,95.7,error_count,4.0,,
+M6v_Wave4,Batch_Tier,Tier 4,31,100.0,error_count,0.0,,
+M6b_Wave4,Rarity_Tier,Abundant,1051,97.15,macro_f1,97.872,balanced_accuracy,96.833
+M6b_Wave4,Rarity_Tier,Moderate,412,96.12,macro_f1,97.042,balanced_accuracy,95.059
+M6b_Wave4,Rarity_Tier,Rare,86,95.35,macro_f1,96.722,balanced_accuracy,94.038
+M6b_Wave4,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,94.12,combined_organ_accuracy,99.35,details,"LUAD->LUSC: 4, LUSC->LUAD: 4"
+M6b_Wave4,Histological_Cluster,Colorectal (COAD vs READ),92,81.52,combined_organ_accuracy,100.0,details,"COAD->READ: 7, READ->COAD: 10"
+M6b_Wave4,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,94.03,combined_organ_accuracy,98.51,details,Rare KICH Recall: 80.0% (8/10)
+M6b_Wave4,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,98.88,combined_organ_accuracy,100.0,details,Rare UCS Recall: 100.0% (9/9)
+M6b_Wave4,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,98.86,combined_organ_accuracy,98.86,details,Rare CHOL Recall: 80.0% (4/5)
+M6b_Wave4,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,95.59,combined_organ_accuracy,95.59,details,Keratinizing Squamous Combined Acc: 95.6%
+M6b_Wave4,Sample_Type,Primary Tumor (01/03),1487,96.64,error_count,50.0,,
+M6b_Wave4,Sample_Type,Metastatic (06),60,100.0,error_count,0.0,,
+M6b_Wave4,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M6b_Wave4,Batch_Tier,Tier 0,1291,96.98,error_count,39.0,,
+M6b_Wave4,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M6b_Wave4,Batch_Tier,Tier 2,131,94.66,error_count,7.0,,
+M6b_Wave4,Batch_Tier,Tier 3,93,95.7,error_count,4.0,,
+M6b_Wave4,Batch_Tier,Tier 4,31,100.0,error_count,0.0,,
+M6b_Pretrained,Rarity_Tier,Abundant,1051,97.43,macro_f1,98.096,balanced_accuracy,97.159
+M6b_Pretrained,Rarity_Tier,Moderate,412,95.15,macro_f1,96.196,balanced_accuracy,93.886
+M6b_Pretrained,Rarity_Tier,Rare,86,95.35,macro_f1,96.722,balanced_accuracy,94.038
+M6b_Pretrained,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,94.12,combined_organ_accuracy,98.69,details,"LUAD->LUSC: 4, LUSC->LUAD: 3"
+M6b_Pretrained,Histological_Cluster,Colorectal (COAD vs READ),92,81.52,combined_organ_accuracy,100.0,details,"COAD->READ: 5, READ->COAD: 12"
+M6b_Pretrained,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,94.78,combined_organ_accuracy,98.51,details,Rare KICH Recall: 80.0% (8/10)
+M6b_Pretrained,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,98.88,combined_organ_accuracy,100.0,details,Rare UCS Recall: 100.0% (9/9)
+M6b_Pretrained,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,98.86,combined_organ_accuracy,98.86,details,Rare CHOL Recall: 80.0% (4/5)
+M6b_Pretrained,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,95.59,combined_organ_accuracy,95.59,details,Keratinizing Squamous Combined Acc: 95.6%
+M6b_Pretrained,Sample_Type,Primary Tumor (01/03),1487,96.57,error_count,51.0,,
+M6b_Pretrained,Sample_Type,Metastatic (06),60,100.0,error_count,0.0,,
+M6b_Pretrained,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M6b_Pretrained,Batch_Tier,Tier 0,1291,96.98,error_count,39.0,,
+M6b_Pretrained,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M6b_Pretrained,Batch_Tier,Tier 2,131,93.13,error_count,9.0,,
+M6b_Pretrained,Batch_Tier,Tier 3,93,96.77,error_count,3.0,,
+M6b_Pretrained,Batch_Tier,Tier 4,31,100.0,error_count,0.0,,
+M6_Lightweight,Rarity_Tier,Abundant,1051,97.24,macro_f1,97.925,balanced_accuracy,96.933
+M6_Lightweight,Rarity_Tier,Moderate,412,95.63,macro_f1,96.781,balanced_accuracy,94.58
+M6_Lightweight,Rarity_Tier,Rare,86,95.35,macro_f1,96.722,balanced_accuracy,94.038
+M6_Lightweight,Histological_Cluster,Lung Carcinoma (LUAD vs LUSC),153,94.12,combined_organ_accuracy,98.69,details,"LUAD->LUSC: 4, LUSC->LUAD: 3"
+M6_Lightweight,Histological_Cluster,Colorectal (COAD vs READ),92,81.52,combined_organ_accuracy,100.0,details,"COAD->READ: 7, READ->COAD: 10"
+M6_Lightweight,Histological_Cluster,Kidney Triad (KIRC vs KIRP vs KICH),134,94.78,combined_organ_accuracy,98.51,details,Rare KICH Recall: 80.0% (8/10)
+M6_Lightweight,Histological_Cluster,Uterine Pair (UCS vs UCEC),89,98.88,combined_organ_accuracy,100.0,details,Rare UCS Recall: 100.0% (9/9)
+M6_Lightweight,Histological_Cluster,GI Hepatobiliary (LIHC vs CHOL vs PAAD),88,98.86,combined_organ_accuracy,98.86,details,Rare CHOL Recall: 80.0% (4/5)
+M6_Lightweight,Histological_Cluster,Squamous Cell Carcinomas (HNSC/LUSC/CESC/ESCA),227,95.59,combined_organ_accuracy,95.59,details,Keratinizing Squamous Combined Acc: 95.6%
+M6_Lightweight,Sample_Type,Primary Tumor (01/03),1487,96.57,error_count,51.0,,
+M6_Lightweight,Sample_Type,Metastatic (06),60,100.0,error_count,0.0,,
+M6_Lightweight,Sample_Type,Recurrent Tumor (02),2,100.0,error_count,0.0,,
+M6_Lightweight,Batch_Tier,Tier 0,1291,97.06,error_count,38.0,,
+M6_Lightweight,Batch_Tier,Tier 1,3,100.0,error_count,0.0,,
+M6_Lightweight,Batch_Tier,Tier 2,131,93.13,error_count,9.0,,
+M6_Lightweight,Batch_Tier,Tier 3,93,95.7,error_count,4.0,,
+M6_Lightweight,Batch_Tier,Tier 4,31,100.0,error_count,0.0,,

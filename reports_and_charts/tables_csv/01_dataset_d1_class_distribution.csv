@@ -1,0 +1,34 @@
+class_id,cancer_code,class_name,rarity_tier,total_samples,train_count,val_count,test_count,train_prior_pct
+7,CHOL,cholangiocarcinoma,Rare,36,26,5,5,0.3599
+9,DLBC,diffuse large B-cell lymphoma,Rare,48,34,7,7,0.4706
+31,UCS,uterine carcinosarcoma,Rare,57,39,9,9,0.5398
+13,KICH,kidney chromophobe,Rare,66,46,10,10,0.6367
+2,ACC,adrenocortical cancer,Rare,79,55,12,12,0.7612
+33,UVM,uveal melanoma,Rare,80,56,12,12,0.7751
+19,MESO,mesothelioma,Rare,87,61,13,13,0.8443
+29,THYM,thymoma,Rare,120,84,18,18,1.1626
+28,TGCT,testicular germ cell tumor,Moderate,156,110,23,23,1.5225
+24,READ,rectum adenocarcinoma,Moderate,161,113,24,24,1.564
+11,GBM,glioblastoma multiforme,Moderate,167,117,25,25,1.6194
+1,LAML,acute myeloid leukemia,Moderate,173,121,26,26,1.6747
+21,PAAD,pancreatic adenocarcinoma,Moderate,179,125,27,27,1.7301
+22,PCPG,pheochromocytoma & paraganglioma,Moderate,184,128,28,28,1.7716
+10,ESCA,esophageal carcinoma,Moderate,185,129,28,28,1.7855
+25,SARC,sarcoma,Moderate,263,185,39,39,2.5606
+15,KIRP,kidney papillary cell carcinoma,Moderate,291,203,44,44,2.8097
+6,CESC,cervical & endocervical cancer,Moderate,307,215,46,46,2.9758
+20,OV,ovarian serous cystadenocarcinoma,Moderate,308,216,46,46,2.9896
+16,LIHC,liver hepatocellular carcinoma,Moderate,373,261,56,56,3.6125
+3,BLCA,bladder urothelial carcinoma,Abundant,408,286,61,61,3.9585
+27,STAD,stomach adenocarcinoma,Abundant,415,291,62,62,4.0277
+8,COAD,colon adenocarcinoma,Abundant,454,318,68,68,4.4014
+26,SKCM,skin cutaneous melanoma,Abundant,473,331,71,71,4.5813
+23,PRAD,prostate adenocarcinoma,Abundant,498,348,75,75,4.8166
+18,LUSC,lung squamous cell carcinoma,Abundant,502,352,75,75,4.872
+30,THCA,thyroid carcinoma,Abundant,513,359,77,77,4.9689
+17,LUAD,lung adenocarcinoma,Abundant,517,361,78,78,4.9965
+12,HNSC,head & neck squamous cell carcinoma,Abundant,522,366,78,78,5.0657
+4,LGG,brain lower grade glioma,Abundant,530,370,80,80,5.1211
+32,UCEC,uterine corpus endometrioid carcinoma,Abundant,533,373,80,80,5.1626
+14,KIRC,kidney clear cell carcinoma,Abundant,534,374,80,80,5.1765
+5,BRCA,breast invasive carcinoma,Abundant,1104,772,166,166,10.6851

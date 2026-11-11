@@ -1,0 +1,66 @@
+{
+  "dataset_name": "D1_clean_16335",
+  "num_genes": 16335,
+  "num_classes": 33,
+  "zero_patient_leakage_verified": true,
+  "shapes": {
+    "X_train": [
+      7225,
+      16335
+    ],
+    "Y_train": [
+      7225,
+      1
+    ],
+    "X_val": [
+      1549,
+      16335
+    ],
+    "Y_val": [
+      1549,
+      1
+    ],
+    "X_test": [
+      1549,
+      16335
+    ],
+    "Y_test": [
+      1549,
+      1
+    ]
+  },
+  "stats": {
+    "total_samples": 10323,
+    "train_samples": 7225,
+    "val_samples": 1549,
+    "test_samples": 1549,
+    "label_min": 1.0,
+    "label_max": 33.0,
+    "X_train_min": -5.87,
+    "X_train_max": 22.75,
+    "X_train_mean": 7.748474451551268,
+    "X_train_std": 3.254673819783099,
+    "X_train_nnz": 115810100
+  },
+  "checksums": {
+    "X_train.bin": "7b563c661268fc4a6094cb44f9c303c6543b5b9ae66ddbedbc9b421485a059c0",
+    "X_train.bin.mtd": "53383cf8b5f1c666ebdbf3f886199baf29af2bab83102d520b5ba6354f6b846e",
+    "Y_train.bin": "feb6b2e7737163fe2ea30f94bd38b10bef034847f93f3756b2c347036ae6f27c",
+    "Y_train.bin.mtd": "08b2b1fcdb83a2d766233aa6291777529b2558c550c8ffd5599b1ade9a47566e",
+    "X_val.bin": "9778672fc98bfc5e7d8b4b930e88191d9fda14f7ef5276e7a64f67ece0f93c73",
+    "X_val.bin.mtd": "dc301ce96bad673e475e6218a897b9a6b9ec9fd055c7ed45c231d02eb8ad4599",
+    "Y_val.bin": "3ee1396f960c471f6f488ff15a194801299ad2eb8f28eff3e7fe885469ad3100",
+    "Y_val.bin.mtd": "bef6555c91a00ddfea84c50eb17615cbafc2ff3b678717e343acc4f3a6b08cc2",
+    "X_test.bin": "f0513473044b7d85fab57fd5f12a2b4d0dee3330f81bd004788b46aec0b3e4e8",
+    "X_test.bin.mtd": "643515c9eda9309e766dbea024661dfa3c2a1d1050748b6d17cf1657c5e2e8d8",
+    "Y_test.bin": "35708906359475a99a0f0305df8513f5991b979a8a77b8c4b39e1e9a373bd7ac",
+    "Y_test.bin.mtd": "38d0760d0777f5e6183135e7817bc755b9e17818851b3aa261fb4099bb4f2816",
+    "gene_names.json": "44a60b4f900a8da4d5005b1c0ab7e74583db9d44bfcdec1b644eb1e07d655fdf",
+    "class_mapping.json": "d59562836f008d61246d8d781f5db89e48d04320834840fb5b4ba95d48ac8637",
+    "class_mapping.tsv": "ecbfb92ca571b6e6dc376750421d25fe47130816c71888484b518e7411b7769e",
+    "label_mapping.json": "39f86439118a85345fa8124823abc1511dbca6b5ebbc9d1db2db5b9875a00ff6",
+    "split_sample_metadata.tsv": "5c916a2037c60697cf9ccd38396379d3c8de4c2716e5316000a37666461cf78d"
+  },
+  "variant": "D1_clean",
+  "description": "10,323 tumor samples x 16,335 clean genes baseline"
+}

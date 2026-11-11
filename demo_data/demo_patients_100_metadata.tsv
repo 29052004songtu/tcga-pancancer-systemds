@@ -1,0 +1,101 @@
+split	row_idx	split_row_idx	sample_id	sample	patient_id	sample_type_id	sample_type	batch_tier	_primary_disease	label_id
+test	17	17	TCGA-2L-AAQI-01	TCGA-2L-AAQI-01	TCGA-2L-AAQI	1	Primary Tumor	0	pancreatic adenocarcinoma	21
+test	46	46	TCGA-ET-A2MY-01	TCGA-ET-A2MY-01	TCGA-ET-A2MY	1	Primary Tumor	0	thyroid carcinoma	30
+test	62	62	TCGA-EJ-5519-01	TCGA-EJ-5519-01	TCGA-EJ-5519	1	Primary Tumor	0	prostate adenocarcinoma	23
+test	74	74	TCGA-KQ-A41N-01	TCGA-KQ-A41N-01	TCGA-KQ-A41N	1	Primary Tumor	0	bladder urothelial carcinoma	3
+test	77	77	TCGA-FF-A7CR-01	TCGA-FF-A7CR-01	TCGA-FF-A7CR	1	Primary Tumor	0	diffuse large B-cell lymphoma	9
+test	87	87	TCGA-CX-7085-01	TCGA-CX-7085-01	TCGA-CX-7085	1	Primary Tumor	0	head & neck squamous cell carcinoma	12
+test	117	117	TCGA-KV-A6GD-01	TCGA-KV-A6GD-01	TCGA-KV-A6GD	1	Primary Tumor	0	kidney papillary cell carcinoma	15
+test	131	131	TCGA-AB-2813-03	TCGA-AB-2813-03	TCGA-AB-2813	3	Primary Blood Derived Cancer - Peripheral Blood	4	acute myeloid leukemia	1
+test	184	184	TCGA-IA-A40X-01	TCGA-IA-A40X-01	TCGA-IA-A40X	1	Primary Tumor	0	kidney papillary cell carcinoma	15
+test	187	187	TCGA-55-7724-01	TCGA-55-7724-01	TCGA-55-7724	1	Primary Tumor	0	lung adenocarcinoma	17
+test	193	193	TCGA-UY-A78O-01	TCGA-UY-A78O-01	TCGA-UY-A78O	1	Primary Tumor	0	bladder urothelial carcinoma	3
+test	215	215	TCGA-ZL-A9V6-01	TCGA-ZL-A9V6-01	TCGA-ZL-A9V6	1	Primary Tumor	0	thymoma	29
+test	223	223	TCGA-A6-6142-01	TCGA-A6-6142-01	TCGA-A6-6142	1	Primary Tumor	0	colon adenocarcinoma	8
+test	257	257	TCGA-CQ-A4C6-01	TCGA-CQ-A4C6-01	TCGA-CQ-A4C6	1	Primary Tumor	0	head & neck squamous cell carcinoma	12
+test	261	261	TCGA-10-0928-01	TCGA-10-0928-01	TCGA-10-0928	1	Primary Tumor	2	ovarian serous cystadenocarcinoma	20
+test	264	264	TCGA-C5-A3HD-01	TCGA-C5-A3HD-01	TCGA-C5-A3HD	1	Primary Tumor	0	cervical & endocervical cancer	6
+test	274	274	TCGA-EM-A2CO-01	TCGA-EM-A2CO-01	TCGA-EM-A2CO	1	Primary Tumor	0	thyroid carcinoma	30
+test	309	309	TCGA-BS-A0U8-01	TCGA-BS-A0U8-01	TCGA-BS-A0U8	1	Primary Tumor	3	uterine corpus endometrioid carcinoma	32
+test	321	321	TCGA-XU-AAXY-01	TCGA-XU-AAXY-01	TCGA-XU-AAXY	1	Primary Tumor	0	thymoma	29
+test	333	333	TCGA-A7-A0D9-01	TCGA-A7-A0D9-01	TCGA-A7-A0D9	1	Primary Tumor	0	breast invasive carcinoma	5
+test	353	353	TCGA-DD-AADM-01	TCGA-DD-AADM-01	TCGA-DD-AADM	1	Primary Tumor	0	liver hepatocellular carcinoma	16
+test	358	358	TCGA-ZN-A9VV-01	TCGA-ZN-A9VV-01	TCGA-ZN-A9VV	1	Primary Tumor	0	mesothelioma	19
+test	386	386	TCGA-QR-A70U-01	TCGA-QR-A70U-01	TCGA-QR-A70U	1	Primary Tumor	0	pheochromocytoma & paraganglioma	22
+test	392	392	TCGA-2G-AAGE-01	TCGA-2G-AAGE-01	TCGA-2G-AAGE	1	Primary Tumor	0	testicular germ cell tumor	28
+test	427	427	TCGA-Q1-A73R-01	TCGA-Q1-A73R-01	TCGA-Q1-A73R	1	Primary Tumor	0	cervical & endocervical cancer	6
+test	451	451	TCGA-BR-6801-01	TCGA-BR-6801-01	TCGA-BR-6801	1	Primary Tumor	2	stomach adenocarcinoma	27
+test	470	470	TCGA-VD-A8KF-01	TCGA-VD-A8KF-01	TCGA-VD-A8KF	1	Primary Tumor	0	uveal melanoma	33
+test	521	521	TCGA-2Z-A9JM-01	TCGA-2Z-A9JM-01	TCGA-2Z-A9JM	1	Primary Tumor	0	kidney papillary cell carcinoma	15
+test	522	522	TCGA-DD-AADK-01	TCGA-DD-AADK-01	TCGA-DD-AADK	1	Primary Tumor	0	liver hepatocellular carcinoma	16
+test	528	528	TCGA-BP-4973-01	TCGA-BP-4973-01	TCGA-BP-4973	1	Primary Tumor	0	kidney clear cell carcinoma	14
+test	540	540	TCGA-LI-A67I-01	TCGA-LI-A67I-01	TCGA-LI-A67I	1	Primary Tumor	0	sarcoma	25
+test	554	554	TCGA-CJ-4884-01	TCGA-CJ-4884-01	TCGA-CJ-4884	1	Primary Tumor	0	kidney clear cell carcinoma	14
+test	574	574	TCGA-77-7465-01	TCGA-77-7465-01	TCGA-77-7465	1	Primary Tumor	0	lung squamous cell carcinoma	18
+test	579	579	TCGA-B0-4834-01	TCGA-B0-4834-01	TCGA-B0-4834	1	Primary Tumor	0	kidney clear cell carcinoma	14
+test	592	592	TCGA-05-4425-01	TCGA-05-4425-01	TCGA-05-4425	1	Primary Tumor	0	lung adenocarcinoma	17
+test	621	621	TCGA-DY-A1DE-01	TCGA-DY-A1DE-01	TCGA-DY-A1DE	1	Primary Tumor	0	rectum adenocarcinoma	24
+test	623	623	TCGA-OR-A5JP-01	TCGA-OR-A5JP-01	TCGA-OR-A5JP	1	Primary Tumor	0	adrenocortical cancer	2
+test	647	647	TCGA-YL-A8HJ-01	TCGA-YL-A8HJ-01	TCGA-YL-A8HJ	1	Primary Tumor	0	prostate adenocarcinoma	23
+test	665	665	TCGA-DU-5847-01	TCGA-DU-5847-01	TCGA-DU-5847	1	Primary Tumor	0	brain lower grade glioma	4
+test	672	672	TCGA-BH-A0W7-01	TCGA-BH-A0W7-01	TCGA-BH-A0W7	1	Primary Tumor	0	breast invasive carcinoma	5
+test	680	680	TCGA-SR-A6MR-01	TCGA-SR-A6MR-01	TCGA-SR-A6MR	1	Primary Tumor	0	pheochromocytoma & paraganglioma	22
+test	686	686	TCGA-G9-6366-01	TCGA-G9-6366-01	TCGA-G9-6366	1	Primary Tumor	0	prostate adenocarcinoma	23
+test	698	698	TCGA-N9-A4Q4-01	TCGA-N9-A4Q4-01	TCGA-N9-A4Q4	1	Primary Tumor	0	uterine carcinosarcoma	31
+test	728	728	TCGA-06-0168-01	TCGA-06-0168-01	TCGA-06-0168	1	Primary Tumor	0	glioblastoma multiforme	11
+test	752	752	TCGA-CN-4730-01	TCGA-CN-4730-01	TCGA-CN-4730	1	Primary Tumor	0	head & neck squamous cell carcinoma	12
+test	756	756	TCGA-GD-A3OS-01	TCGA-GD-A3OS-01	TCGA-GD-A3OS	1	Primary Tumor	0	bladder urothelial carcinoma	3
+test	786	786	TCGA-14-0736-02	TCGA-14-0736-02	TCGA-14-0736	2	Recurrent Tumor	0	glioblastoma multiforme	11
+test	803	803	TCGA-4G-AAZT-01	TCGA-4G-AAZT-01	TCGA-4G-AAZT	1	Primary Tumor	0	cholangiocarcinoma	7
+test	804	804	TCGA-FC-A5OB-01	TCGA-FC-A5OB-01	TCGA-FC-A5OB	1	Primary Tumor	0	prostate adenocarcinoma	23
+test	810	810	TCGA-WA-A7GZ-01	TCGA-WA-A7GZ-01	TCGA-WA-A7GZ	1	Primary Tumor	0	head & neck squamous cell carcinoma	12
+test	815	815	TCGA-LL-A740-01	TCGA-LL-A740-01	TCGA-LL-A740	1	Primary Tumor	0	breast invasive carcinoma	5
+test	822	822	TCGA-DD-AACK-01	TCGA-DD-AACK-01	TCGA-DD-AACK	1	Primary Tumor	0	liver hepatocellular carcinoma	16
+test	842	842	TCGA-ZH-A8Y1-01	TCGA-ZH-A8Y1-01	TCGA-ZH-A8Y1	1	Primary Tumor	0	cholangiocarcinoma	7
+test	848	848	TCGA-F5-6810-01	TCGA-F5-6810-01	TCGA-F5-6810	1	Primary Tumor	0	rectum adenocarcinoma	24
+test	870	870	TCGA-BG-A0W1-01	TCGA-BG-A0W1-01	TCGA-BG-A0W1	1	Primary Tumor	3	uterine corpus endometrioid carcinoma	32
+test	871	871	TCGA-KL-8327-01	TCGA-KL-8327-01	TCGA-KL-8327	1	Primary Tumor	0	kidney chromophobe	13
+test	884	884	TCGA-MU-A51Y-01	TCGA-MU-A51Y-01	TCGA-MU-A51Y	1	Primary Tumor	0	cervical & endocervical cancer	6
+test	887	887	TCGA-EE-A3AG-06	TCGA-EE-A3AG-06	TCGA-EE-A3AG	6	Metastatic	0	skin cutaneous melanoma	26
+test	920	920	TCGA-EE-A3AB-06	TCGA-EE-A3AB-06	TCGA-EE-A3AB	6	Metastatic	0	skin cutaneous melanoma	26
+test	933	933	TCGA-B5-A11Y-01	TCGA-B5-A11Y-01	TCGA-B5-A11Y	1	Primary Tumor	3	uterine corpus endometrioid carcinoma	32
+test	950	950	TCGA-DX-A7EF-01	TCGA-DX-A7EF-01	TCGA-DX-A7EF	1	Primary Tumor	0	sarcoma	25
+test	988	988	TCGA-EE-A29C-06	TCGA-EE-A29C-06	TCGA-EE-A29C	6	Metastatic	0	skin cutaneous melanoma	26
+test	1014	1014	TCGA-F4-6854-01	TCGA-F4-6854-01	TCGA-F4-6854	1	Primary Tumor	0	colon adenocarcinoma	8
+test	1016	1016	TCGA-S7-A7WW-01	TCGA-S7-A7WW-01	TCGA-S7-A7WW	1	Primary Tumor	0	pheochromocytoma & paraganglioma	22
+test	1022	1022	TCGA-85-A511-01	TCGA-85-A511-01	TCGA-85-A511	1	Primary Tumor	0	lung squamous cell carcinoma	18
+test	1027	1027	TCGA-55-1594-01	TCGA-55-1594-01	TCGA-55-1594	1	Primary Tumor	0	lung adenocarcinoma	17
+test	1028	1028	TCGA-IN-A6RO-01	TCGA-IN-A6RO-01	TCGA-IN-A6RO	1	Primary Tumor	2	stomach adenocarcinoma	27
+test	1034	1034	TCGA-AB-2994-03	TCGA-AB-2994-03	TCGA-AB-2994	3	Primary Blood Derived Cancer - Peripheral Blood	4	acute myeloid leukemia	1
+test	1036	1036	TCGA-EY-A215-01	TCGA-EY-A215-01	TCGA-EY-A215	1	Primary Tumor	3	uterine corpus endometrioid carcinoma	32
+test	1042	1042	TCGA-FF-8062-01	TCGA-FF-8062-01	TCGA-FF-8062	1	Primary Tumor	0	diffuse large B-cell lymphoma	9
+test	1052	1052	TCGA-E2-A15P-01	TCGA-E2-A15P-01	TCGA-E2-A15P	1	Primary Tumor	0	breast invasive carcinoma	5
+test	1081	1081	TCGA-AB-2917-03	TCGA-AB-2917-03	TCGA-AB-2917	3	Primary Blood Derived Cancer - Peripheral Blood	4	acute myeloid leukemia	1
+test	1087	1087	TCGA-FG-6691-01	TCGA-FG-6691-01	TCGA-FG-6691	1	Primary Tumor	0	brain lower grade glioma	4
+test	1090	1090	TCGA-LN-A49K-01	TCGA-LN-A49K-01	TCGA-LN-A49K	1	Primary Tumor	2	esophageal carcinoma	10
+test	1121	1121	TCGA-P5-A5EU-01	TCGA-P5-A5EU-01	TCGA-P5-A5EU	1	Primary Tumor	0	brain lower grade glioma	4
+test	1162	1162	TCGA-OR-A5JX-01	TCGA-OR-A5JX-01	TCGA-OR-A5JX	1	Primary Tumor	0	adrenocortical cancer	2
+test	1167	1167	TCGA-25-1317-01	TCGA-25-1317-01	TCGA-25-1317	1	Primary Tumor	2	ovarian serous cystadenocarcinoma	20
+test	1178	1178	TCGA-77-8145-01	TCGA-77-8145-01	TCGA-77-8145	1	Primary Tumor	0	lung squamous cell carcinoma	18
+test	1198	1198	TCGA-QM-A5NM-01	TCGA-QM-A5NM-01	TCGA-QM-A5NM	1	Primary Tumor	0	uterine carcinosarcoma	31
+test	1200	1200	TCGA-A2-A1FZ-01	TCGA-A2-A1FZ-01	TCGA-A2-A1FZ	1	Primary Tumor	0	breast invasive carcinoma	5
+test	1201	1201	TCGA-E1-5307-01	TCGA-E1-5307-01	TCGA-E1-5307	1	Primary Tumor	0	brain lower grade glioma	4
+test	1206	1206	TCGA-AA-A02K-01	TCGA-AA-A02K-01	TCGA-AA-A02K	1	Primary Tumor	0	colon adenocarcinoma	8
+test	1215	1215	TCGA-EB-A4P0-01	TCGA-EB-A4P0-01	TCGA-EB-A4P0	1	Primary Tumor	0	skin cutaneous melanoma	26
+test	1223	1223	TCGA-VQ-A8PQ-01	TCGA-VQ-A8PQ-01	TCGA-VQ-A8PQ	1	Primary Tumor	2	stomach adenocarcinoma	27
+test	1270	1270	TCGA-KO-8404-01	TCGA-KO-8404-01	TCGA-KO-8404	1	Primary Tumor	0	kidney chromophobe	13
+test	1288	1288	TCGA-DX-A3UE-01	TCGA-DX-A3UE-01	TCGA-DX-A3UE	1	Primary Tumor	0	sarcoma	25
+test	1295	1295	TCGA-ET-A2MZ-01	TCGA-ET-A2MZ-01	TCGA-ET-A2MZ	1	Primary Tumor	0	thyroid carcinoma	30
+test	1303	1303	TCGA-VR-A8ER-01	TCGA-VR-A8ER-01	TCGA-VR-A8ER	1	Primary Tumor	2	esophageal carcinoma	10
+test	1317	1317	TCGA-78-7542-01	TCGA-78-7542-01	TCGA-78-7542	1	Primary Tumor	0	lung adenocarcinoma	17
+test	1321	1321	TCGA-LN-A4A3-01	TCGA-LN-A4A3-01	TCGA-LN-A4A3	1	Primary Tumor	2	esophageal carcinoma	10
+test	1345	1345	TCGA-IB-A7M4-01	TCGA-IB-A7M4-01	TCGA-IB-A7M4	1	Primary Tumor	0	pancreatic adenocarcinoma	21
+test	1362	1362	TCGA-25-2409-01	TCGA-25-2409-01	TCGA-25-2409	1	Primary Tumor	2	ovarian serous cystadenocarcinoma	20
+test	1371	1371	TCGA-B0-4818-01	TCGA-B0-4818-01	TCGA-B0-4818	1	Primary Tumor	0	kidney clear cell carcinoma	14
+test	1392	1392	TCGA-LK-A4O4-01	TCGA-LK-A4O4-01	TCGA-LK-A4O4	1	Primary Tumor	0	mesothelioma	19
+test	1405	1405	TCGA-Z5-AAPL-01	TCGA-Z5-AAPL-01	TCGA-Z5-AAPL	1	Primary Tumor	0	pancreatic adenocarcinoma	21
+test	1450	1450	TCGA-A2-A4S2-01	TCGA-A2-A4S2-01	TCGA-A2-A4S2	1	Primary Tumor	0	breast invasive carcinoma	5
+test	1503	1503	TCGA-YZ-A983-01	TCGA-YZ-A983-01	TCGA-YZ-A983	1	Primary Tumor	0	uveal melanoma	33
+test	1504	1504	TCGA-63-A5MN-01	TCGA-63-A5MN-01	TCGA-63-A5MN	1	Primary Tumor	0	lung squamous cell carcinoma	18
+test	1509	1509	TCGA-DJ-A2Q6-01	TCGA-DJ-A2Q6-01	TCGA-DJ-A2Q6	1	Primary Tumor	0	thyroid carcinoma	30
+test	1539	1539	TCGA-2G-AAGT-01	TCGA-2G-AAGT-01	TCGA-2G-AAGT	1	Primary Tumor	0	testicular germ cell tumor	28

@@ -1,0 +1,67 @@
+# ==============================================================================
+# Git Ignore Configuration for TCGA Pan-Cancer Release Staging
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments, Secrets & Credentials - NEVER COMMIT
+.env
+.env.*
+*.env
+*apikey*
+*.pem
+*.key
+*.token
+*.secret
+credentials.json
+*_apikey_*.txt
+.agy/
+*.agy/
+*modal*
+*coreweave*
+*forge*
+*notebooklm*
+*2004songtu*
+*phamvanmanh*
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing caches & coverage
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+
+# Experiment tracking & local run logs
+wandb/
+.wandb
+runs/
+*.log
+demo_output/
+scratch_space/
+
+# Operating System & IDE artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+.tmp/
+tmp/

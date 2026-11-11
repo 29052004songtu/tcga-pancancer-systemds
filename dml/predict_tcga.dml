@@ -1,0 +1,189 @@
+# Apache SystemDS Standalone Prediction Script for TCGA Pan-Cancer 33 Classes
+#
+# Arguments:
+#   $in_X        : Path to input gene expression matrix (CSV or binary)
+#   $in_C        : Path to F0 centering.bin
+#   $in_S        : Path to F0 scalefactor.bin
+#   $in_Proj     : Path to F2 ANOVA proj.bin
+#   $models_dir  : Path to models_pretrained/
+#   $model_name  : Name of model ('M1_multiLogReg', 'M2_msvm', 'M2_msvm_reg100', 'M3_mlp_lowrank', 'M6_lightweight_no_m5')
+#   $tau         : Prior adjustment factor (default 0.0 or model default)
+#   $out_prob    : Path to output probability CSV
+#   $out_pred    : Path to output predictions CSV
+
+stable_softmax = function(matrix[double] logits)
+    return (matrix[double] probs) {
+    shifted = logits - rowMaxs(logits);
+    exp_x = exp(shifted);
+    probs = exp_x / rowSums(exp_x);
+}
+
+apply_prior_adjustment = function(matrix[double] P_raw, matrix[double] class_priors, double tau)
+    return (matrix[double] P_adj, matrix[double] yhat) {
+    if (tau == 0.0) {
+        P_adj = P_raw;
+    } else {
+        log_P = log(P_raw + 1e-15);
+        log_pri = log(class_priors + 1e-15);
+        adj_logits = log_P - tau * log_pri;
+        shifted = adj_logits - rowMaxs(adj_logits);
+        exp_x = exp(shifted);
+        P_adj = exp_x / rowSums(exp_x);
+    }
+    yhat = rowIndexMax(P_adj);
+}
+
+batch_norm_inference = function(matrix[double] X, matrix[double] gamma, matrix[double] beta,
+                               matrix[double] ema_mean, matrix[double] ema_var, double eps)
+    return (matrix[double] out) {
+    std = sqrt(ema_var + eps);
+    out = ((X - ema_mean) / std) * gamma + beta;
+}
+
+model = ifdef($model_name, "M1_multiLogReg");
+tau_raw = ifdef($tau, 0.0);
+tau_val = as.double(tau_raw);
+scale_factor_raw = ifdef($scale_factor, 1.0);
+scale_factor_val = as.double(scale_factor_raw);
+
+X_raw = read($in_X);
+C = read($in_C);
+S = read($in_S);
+
+# Z-score standardization with missing gene rescaling: ((X - C) / S) * scale_factor
+X_f0 = scaleApply(X_raw, C, S) * scale_factor_val;
+
+N = nrow(X_f0);
+D = ncol(X_f0);
+num_classes = 33;
+
+P = matrix(0.0, rows=N, cols=num_classes);
+
+if (model == "M1_multiLogReg" | model == "M1") {
+    B = read($models_dir + "/M1_multiLogReg/weights_bin/B.bin");
+    pri = read($models_dir + "/M1_multiLogReg/weights_bin/class_priors.bin");
+    beta = B[1:D, ];
+    linear = X_f0 %*% beta;
+    if (nrow(B) > D) {
+        linear = linear + B[D+1:D+1, ];
+    }
+    logits = cbind(linear, matrix(0.0, rows=N, cols=1));
+    P_raw = stable_softmax(logits);
+    [P, yhat] = apply_prior_adjustment(P_raw, pri, tau_val);
+}
+else if (model == "M2_msvm" | model == "M2") {
+    W = read($models_dir + "/M2_msvm/weights_bin/W.bin");
+    pri = read($models_dir + "/M2_msvm/weights_bin/class_priors.bin");
+    if (nrow(W) > D) {
+        scores = X_f0 %*% W[1:D, ] + W[D+1:D+1, ];
+    } else {
+        scores = X_f0 %*% W;
+    }
+    temp_T = 0.25;
+    P_raw = stable_softmax(scores / temp_T);
+    tau_m2 = tau_val;
+    if (tau_val == 0.0) {
+        tau_m2 = 0.25;
+    }
+    [P, yhat] = apply_prior_adjustment(P_raw, pri, tau_m2);
+}
+else if (model == "M2_msvm_reg100") {
+    W = read($models_dir + "/M2_msvm_reg100/weights_bin/W.bin");
+    pri = read($models_dir + "/M2_msvm_reg100/weights_bin/class_priors.bin");
+    if (nrow(W) > D) {
+        scores = X_f0 %*% W[1:D, ] + W[D+1:D+1, ];
+    } else {
+        scores = X_f0 %*% W;
+    }
+    temp_T = 0.25;
+    P_raw = stable_softmax(scores / temp_T);
+    [P, yhat] = apply_prior_adjustment(P_raw, pri, tau_val);
+}
+else if (model == "M3_mlp_lowrank" | model == "M3") {
+    Proj = read($in_Proj);
+    X_f2 = X_f0 %*% Proj;
+    U1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/U1.bin");
+    V1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/V1.bin");
+    b1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/b1.bin");
+    g1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/g1.bin");
+    bt1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/bt1.bin");
+    em1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/em1.bin");
+    ev1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/ev1.bin");
+    W2 = read($models_dir + "/M3_mlp_lowrank/weights_bin/W2.bin");
+    b2 = read($models_dir + "/M3_mlp_lowrank/weights_bin/b2.bin");
+    g2 = read($models_dir + "/M3_mlp_lowrank/weights_bin/g2.bin");
+    bt2 = read($models_dir + "/M3_mlp_lowrank/weights_bin/bt2.bin");
+    em2 = read($models_dir + "/M3_mlp_lowrank/weights_bin/em2.bin");
+    ev2 = read($models_dir + "/M3_mlp_lowrank/weights_bin/ev2.bin");
+    W3 = read($models_dir + "/M3_mlp_lowrank/weights_bin/W3.bin");
+    b3 = read($models_dir + "/M3_mlp_lowrank/weights_bin/b3.bin");
+    pri = read($models_dir + "/M3_mlp_lowrank/weights_bin/class_priors.bin");
+
+    o1 = (X_f2 %*% U1) %*% V1 + b1;
+    bn1 = batch_norm_inference(o1, g1, bt1, em1, ev1, 1e-5);
+    a1 = max(0.0, bn1);
+    o2 = a1 %*% W2 + b2;
+    bn2 = batch_norm_inference(o2, g2, bt2, em2, ev2, 1e-5);
+    a2 = max(0.0, bn2);
+    logits = a2 %*% W3 + b3;
+    P_raw = stable_softmax(logits);
+    [P, yhat] = apply_prior_adjustment(P_raw, pri, tau_val);
+}
+else if (model == "M6_lightweight_no_m5" | model == "M6_low_ece_calibrated" | model == "M6_auto" | model == "M6") {
+    # M1
+    B1 = read($models_dir + "/M1_multiLogReg/weights_bin/B.bin");
+    pri1 = read($models_dir + "/M1_multiLogReg/weights_bin/class_priors.bin");
+    l1 = X_f0 %*% B1[1:D, ];
+    if (nrow(B1) > D) { l1 = l1 + B1[D+1:D+1, ]; }
+    P1_raw = stable_softmax(cbind(l1, matrix(0.0, rows=N, cols=1)));
+    [P1, y1] = apply_prior_adjustment(P1_raw, pri1, 0.0);
+
+    # M2_reg100
+    W2 = read($models_dir + "/M2_msvm_reg100/weights_bin/W.bin");
+    pri2 = read($models_dir + "/M2_msvm_reg100/weights_bin/class_priors.bin");
+    if (nrow(W2) > D) { sc2 = X_f0 %*% W2[1:D, ] + W2[D+1:D+1, ]; } else { sc2 = X_f0 %*% W2; }
+    P2_raw = stable_softmax(sc2 / 0.25);
+    [P2, y2] = apply_prior_adjustment(P2_raw, pri2, 0.0);
+
+    # M3
+    Proj = read($in_Proj);
+    X_f2 = X_f0 %*% Proj;
+    U1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/U1.bin");
+    V1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/V1.bin");
+    b1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/b1.bin");
+    g1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/g1.bin");
+    bt1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/bt1.bin");
+    em1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/em1.bin");
+    ev1 = read($models_dir + "/M3_mlp_lowrank/weights_bin/ev1.bin");
+    W2_m3 = read($models_dir + "/M3_mlp_lowrank/weights_bin/W2.bin");
+    b2_m3 = read($models_dir + "/M3_mlp_lowrank/weights_bin/b2.bin");
+    g2 = read($models_dir + "/M3_mlp_lowrank/weights_bin/g2.bin");
+    bt2 = read($models_dir + "/M3_mlp_lowrank/weights_bin/bt2.bin");
+    em2 = read($models_dir + "/M3_mlp_lowrank/weights_bin/em2.bin");
+    ev2 = read($models_dir + "/M3_mlp_lowrank/weights_bin/ev2.bin");
+    W3 = read($models_dir + "/M3_mlp_lowrank/weights_bin/W3.bin");
+    b3 = read($models_dir + "/M3_mlp_lowrank/weights_bin/b3.bin");
+    pri3 = read($models_dir + "/M3_mlp_lowrank/weights_bin/class_priors.bin");
+
+    o1 = (X_f2 %*% U1) %*% V1 + b1;
+    bn1 = batch_norm_inference(o1, g1, bt1, em1, ev1, 1e-5);
+    a1 = max(0.0, bn1);
+    o2 = a1 %*% W2_m3 + b2_m3;
+    bn2 = batch_norm_inference(o2, g2, bt2, em2, ev2, 1e-5);
+    a2 = max(0.0, bn2);
+    P3_raw = stable_softmax(a2 %*% W3 + b3);
+    [P3, y3] = apply_prior_adjustment(P3_raw, pri3, 0.0);
+
+    # Weighted blend: 0.25 * M1 + 0.45 * M2_reg100 + 0.30 * M3
+    P_blend = 0.25 * P1 + 0.45 * P2 + 0.30 * P3;
+    P = P_blend / rowSums(P_blend);
+}
+else {
+    stop("Unknown model_name: " + model);
+}
+
+y_pred = rowIndexMax(P);
+
+write(P, $out_prob, format="csv");
+write(y_pred, $out_pred, format="csv");
+print("SYSTEMDS_INFERENCE_COMPLETE: samples=" + N + " model=" + model);

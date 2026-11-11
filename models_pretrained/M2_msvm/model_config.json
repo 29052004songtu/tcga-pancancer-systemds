@@ -1,0 +1,50 @@
+{
+  "model_key": "M2_msvm",
+  "model_family": "M2_msvm",
+  "source_run_id": "D1_Wave4_Champion_M2_msvm",
+  "feature_space": "F0_full",
+  "num_classes": 33,
+  "hyperparams": {
+    "reg": 25.0,
+    "tau": 0.25,
+    "maxi": 80,
+    "temp_T": 0.25,
+    "bias_scale": 10.0,
+    "epsilon": 0.0001,
+    "verbose_train": "FALSE"
+  },
+  "dml_metrics": {
+    "model": "M2_msvm",
+    "reg": 25.0,
+    "temp_T": 0.25,
+    "tau": 0.25,
+    "train_acc": 100.0,
+    "train_bal_acc": 100.0,
+    "train_macro_f1": 100.0,
+    "train_loss": 0.0017678683435354513,
+    "val_acc": 97.22401549386701,
+    "val_bal_acc": 96.04192719263818,
+    "val_macro_f1": 95.78769031581359,
+    "val_loss": 0.12657929988113834,
+    "test_acc": 96.70755326016786,
+    "test_bal_acc": 95.16877683196986,
+    "test_macro_f1": 95.09182871855765,
+    "test_loss": 0.13380125129392942,
+    "gap_macro_f1": 4.212309684186408,
+    "gap_loss": 0.12481143153760288,
+    "train_time_sec": 23.057104373
+  },
+  "weight_shapes": {
+    "W": [
+      16336,
+      33
+    ],
+    "class_priors": [
+      1,
+      33
+    ]
+  },
+  "history_steps": 80,
+  "wall_time_sec": 68.496,
+  "description": "Multi-class Primal L2-SVM Champion (Val-selected, reg=25.0, T=0.25, tau=0.25) on F0_full."
+}

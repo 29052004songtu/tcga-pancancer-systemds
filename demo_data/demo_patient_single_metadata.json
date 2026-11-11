@@ -1,0 +1,13 @@
+{
+  "sample_id": "TCGA-86-A4JF-01",
+  "patient_id": "TCGA-86-A4JF",
+  "split": "test",
+  "test_row_idx_0based": 2,
+  "split_metadata_row_idx": 2,
+  "sample_type": "Primary Tumor",
+  "batch_tier": "0",
+  "_primary_disease": "lung adenocarcinoma",
+  "true_label_id_1based": 17,
+  "num_genes": 16335,
+  "expression_unit": "log2(norm_value + 1) IlluminaHiSeq_RNASeqV2"
+}

@@ -1,0 +1,15 @@
+# Minimal dependencies for standalone TCGA Pan-Cancer inference (PretrainedTCGAInferenceEngine)
+numpy>=1.26.0,<3.0
+pandas>=2.0.0
+
+# Interactive Web Application Demo:
+streamlit>=1.35.0
+altair>=5.0.0
+
+# Optional: required only when downloading google_drive_heavy_bundle/ via Google Drive links
+# Install with uv: uv pip install --python .venv/bin/python gdown
+# gdown>=5.0.0
+
+# Optional: required only when running native Apache SystemDS 3.4.0 DML parity verification scripts
+# systemds==3.4.0
+# py4j==0.10.9.9

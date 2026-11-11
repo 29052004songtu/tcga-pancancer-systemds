@@ -1,0 +1,73 @@
+{
+  "model_key": "M5_kernel_ridge_rbf",
+  "model_family": "M5_kernel_ridge",
+  "source_run_id": "D1_Wave4_Champion_M5_kernel_ridge",
+  "feature_space": "F0_full",
+  "num_classes": 33,
+  "hyperparams": {
+    "reg": 0.02,
+    "tau": 0.0,
+    "maxi": 150,
+    "kernel_type": "rbf",
+    "normalize_rows": "TRUE",
+    "gamma": -1.0,
+    "gamma_mult": 0.5,
+    "bias_scale": 1.0,
+    "alpha": 0.35,
+    "temp_T": 0.08,
+    "tol": 1e-06,
+    "history_stride": 1,
+    "effective_gamma": 0.250316307567378
+  },
+  "dml_metrics": {
+    "model": "M5_kernel_ridge",
+    "kernel_type": "rbf",
+    "eff_gamma": 0.250316307567378,
+    "reg": 0.02,
+    "alpha": 0.35,
+    "temp_T": 0.08,
+    "tau": 0.0,
+    "cg_iters": 150,
+    "cg_rel_err": 0.0054095001708218396,
+    "train_acc": 100.0,
+    "train_bal_acc": 100.0,
+    "train_macro_f1": 100.0,
+    "train_loss": 0.00019584163734755078,
+    "val_acc": 96.77211103938025,
+    "val_bal_acc": 95.13791960728297,
+    "val_macro_f1": 95.18083929324008,
+    "val_loss": 0.13714928731003487,
+    "test_acc": 96.70755326016786,
+    "test_bal_acc": 94.94046320060488,
+    "test_macro_f1": 94.98102974524232,
+    "test_loss": 0.1289844978058944,
+    "gap_macro_f1": 4.8191607067599165,
+    "gap_loss": 0.13695344567268733,
+    "train_time_sec": 54.054127777
+  },
+  "weight_shapes": {
+    "Alpha": [
+      7225,
+      33
+    ],
+    "bias_offset": [
+      1,
+      33
+    ],
+    "class_priors": [
+      1,
+      33
+    ],
+    "eff_gamma": [
+      1,
+      1
+    ],
+    "r2_tr": [
+      7225,
+      1
+    ]
+  },
+  "history_steps": 151,
+  "wall_time_sec": 58.81,
+  "description": "Dual RBF Kernel Ridge Regression Champion (gamma_mult=0.5, reg=0.02, T=0.08, Block-CG) on F0_full."
+}

@@ -1,0 +1,48 @@
+{
+  "model_key": "M1_multiLogReg",
+  "model_family": "M1_multiLogReg",
+  "source_run_id": "D1_Wave4_Champion_M1_multiLogReg",
+  "feature_space": "F0_full",
+  "num_classes": 33,
+  "hyperparams": {
+    "reg": 2.5,
+    "tau": 0.0,
+    "maxi": 80,
+    "maxii": 20,
+    "tol": 1e-05,
+    "verbose_train": "FALSE"
+  },
+  "dml_metrics": {
+    "model": "M1_multiLogReg",
+    "reg": 2.5,
+    "tau": 0.0,
+    "train_acc": 100.0,
+    "train_bal_acc": 100.0,
+    "train_macro_f1": 100.0,
+    "train_loss": 0.0003480220754831581,
+    "val_acc": 96.44932214331827,
+    "val_bal_acc": 94.66449720597798,
+    "val_macro_f1": 94.7625913170669,
+    "val_loss": 0.13257216158790477,
+    "test_acc": 96.57843770174306,
+    "test_bal_acc": 95.2283569797102,
+    "test_macro_f1": 95.17760647280244,
+    "test_loss": 0.12240165662368753,
+    "gap_macro_f1": 5.2374086829330935,
+    "gap_loss": 0.13222413951242162,
+    "train_time_sec": 23.10934043
+  },
+  "weight_shapes": {
+    "B": [
+      16336,
+      32
+    ],
+    "class_priors": [
+      1,
+      33
+    ]
+  },
+  "history_steps": 17,
+  "wall_time_sec": 49.244,
+  "description": "Multinomial Logistic Regression (Trust-Region Newton-CG, icpt=1) Champion on F0_full (16,335 genes)."
+}

@@ -1,0 +1,120 @@
+{
+  "model_key": "M3_mlp_lowrank",
+  "model_family": "M3_mlp_lowrank",
+  "source_run_id": "D1_Wave4_Champion_M3_mlp_lowrank_seed777",
+  "feature_space": "F2_anova_5000",
+  "num_classes": 33,
+  "hyperparams": {
+    "reg": 1.0,
+    "tau": 0.0,
+    "maxi": 50,
+    "rank_R": 48,
+    "hidden1": 256,
+    "hidden2": 96,
+    "epochs": 35,
+    "batch_size": 128,
+    "lr": 0.002,
+    "alpha": 0.35,
+    "l2_reg": 0.001,
+    "dropout_p": 0.35,
+    "use_bn": "TRUE",
+    "patience": 12,
+    "seed": 777,
+    "deterministic": "TRUE"
+  },
+  "dml_metrics": {
+    "model": "M3_mlp_lowrank",
+    "rank_R": 48,
+    "alpha": 0.35,
+    "tau": 0.0,
+    "l2_reg": 0.001,
+    "dropout_p": 0.35,
+    "batch_size": 128,
+    "epochs": 35,
+    "best_epoch": 17,
+    "train_acc": 99.72318339100346,
+    "train_bal_acc": 99.64467793665393,
+    "train_macro_f1": 99.63555456811783,
+    "train_loss": 0.010537861041582542,
+    "val_acc": 96.38476436410588,
+    "val_bal_acc": 94.96366197484551,
+    "val_macro_f1": 94.64764494276928,
+    "val_loss": 0.1358099487882625,
+    "test_acc": 96.12653324725629,
+    "test_bal_acc": 95.01715547326182,
+    "test_macro_f1": 95.04052812385683,
+    "test_loss": 0.13801253069311628,
+    "gap_macro_f1": 4.98790962534855,
+    "gap_loss": 0.12527208774667994,
+    "train_time_sec": 104.238216522
+  },
+  "weight_shapes": {
+    "U1": [
+      5000,
+      48
+    ],
+    "V1": [
+      48,
+      256
+    ],
+    "W2": [
+      256,
+      96
+    ],
+    "W3": [
+      96,
+      33
+    ],
+    "b1": [
+      1,
+      256
+    ],
+    "b2": [
+      1,
+      96
+    ],
+    "b3": [
+      1,
+      33
+    ],
+    "bt1": [
+      1,
+      256
+    ],
+    "bt2": [
+      1,
+      96
+    ],
+    "class_priors": [
+      1,
+      33
+    ],
+    "em1": [
+      1,
+      256
+    ],
+    "em2": [
+      1,
+      96
+    ],
+    "ev1": [
+      1,
+      256
+    ],
+    "ev2": [
+      1,
+      96
+    ],
+    "g1": [
+      1,
+      256
+    ],
+    "g2": [
+      1,
+      96
+    ]
+  },
+  "history_steps": 29,
+  "wall_time_sec": 110.576,
+  "description": "Deterministic (seed=777, Val-selected) Low-Rank Affine Harmony MLP (R=48, 5000->256->96->33) on F2_anova_5000."
+}

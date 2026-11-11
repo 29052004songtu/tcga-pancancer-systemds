@@ -1,0 +1,50 @@
+{
+  "model_key": "M2_msvm_reg100",
+  "model_family": "M2_msvm",
+  "source_run_id": "D1_F0_M2_reg100.0_T0.25_b10_tau0.0_C3",
+  "feature_space": "F0_full",
+  "num_classes": 33,
+  "hyperparams": {
+    "reg": 100.0,
+    "tau": 0.0,
+    "maxi": 80,
+    "temp_T": 0.25,
+    "bias_scale": 10.0,
+    "epsilon": 0.0001,
+    "verbose_train": "FALSE"
+  },
+  "dml_metrics": {
+    "model": "M2_msvm",
+    "reg": 100.0,
+    "temp_T": 0.25,
+    "tau": 0.0,
+    "train_acc": 100.0,
+    "train_bal_acc": 100.0,
+    "train_macro_f1": 100.0,
+    "train_loss": 0.0023518299570871705,
+    "val_acc": 96.83666881859264,
+    "val_bal_acc": 95.29390490311391,
+    "val_macro_f1": 95.23846564495842,
+    "val_loss": 0.12174015742092266,
+    "test_acc": 96.96578437701743,
+    "test_bal_acc": 95.37779483273358,
+    "test_macro_f1": 95.66490447778482,
+    "test_loss": 0.12557418795777525,
+    "gap_macro_f1": 4.761534355041576,
+    "gap_loss": 0.11938832746383549,
+    "train_time_sec": 52.658412994
+  },
+  "weight_shapes": {
+    "W": [
+      16336,
+      33
+    ],
+    "class_priors": [
+      1,
+      33
+    ]
+  },
+  "history_steps": 80,
+  "wall_time_sec": 122.979,
+  "description": "Multi-class Primal L2-SVM Calibrated High-Regularization Variant (reg=100.0, T=0.25, tau=0.0, lowest linear ECE)."
+}

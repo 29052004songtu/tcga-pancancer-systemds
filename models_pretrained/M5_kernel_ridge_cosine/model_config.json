@@ -1,0 +1,69 @@
+{
+  "model_key": "M5_kernel_ridge_cosine",
+  "model_family": "M5_kernel_ridge",
+  "source_run_id": "D1_F0_M5_cos_reg0.05_a0.35_T0.05_C3",
+  "feature_space": "F0_full",
+  "num_classes": 33,
+  "hyperparams": {
+    "reg": 0.05,
+    "tau": 0.0,
+    "maxi": 150,
+    "kernel_type": "cosine",
+    "normalize_rows": "TRUE",
+    "gamma": -1.0,
+    "gamma_mult": 1.0,
+    "bias_scale": 1.0,
+    "alpha": 0.35,
+    "temp_T": 0.05,
+    "tol": 1e-06,
+    "history_stride": 1,
+    "effective_gamma": -1.0
+  },
+  "dml_metrics": {
+    "model": "M5_kernel_ridge",
+    "kernel_type": "cosine",
+    "eff_gamma": -1.0,
+    "reg": 0.05,
+    "alpha": 0.35,
+    "temp_T": 0.05,
+    "tau": 0.0,
+    "cg_iters": 150,
+    "cg_rel_err": 0.012588051420604209,
+    "train_acc": 100.0,
+    "train_bal_acc": 100.0,
+    "train_macro_f1": 100.0,
+    "train_loss": 0.00016746436542845145,
+    "val_acc": 96.77211103938025,
+    "val_bal_acc": 95.23850220668032,
+    "val_macro_f1": 95.1045856173534,
+    "val_loss": 0.1894832367355903,
+    "test_acc": 97.03034215622982,
+    "test_bal_acc": 95.89919627967579,
+    "test_macro_f1": 95.60963549633995,
+    "test_loss": 0.18511260101529287,
+    "gap_macro_f1": 4.8954143826466066,
+    "gap_loss": 0.18931577237016187,
+    "train_time_sec": 55.210905635
+  },
+  "weight_shapes": {
+    "Alpha": [
+      7225,
+      33
+    ],
+    "bias_offset": [
+      1,
+      33
+    ],
+    "class_priors": [
+      1,
+      33
+    ],
+    "eff_gamma": [
+      1,
+      1
+    ]
+  },
+  "history_steps": 151,
+  "wall_time_sec": 60.322,
+  "description": "Dual Cosine Kernel Ridge Regression Peak-Accuracy Variant (reg=0.05, T=0.05, alpha=0.35) on F0_full."
+}

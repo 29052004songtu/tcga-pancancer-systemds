@@ -1,0 +1,7 @@
+split,baseline_name,num_samples,num_valid_classes,accuracy,balanced_accuracy,macro_f1,weighted_f1,macro_precision,macro_recall,log_loss,top_3_accuracy,ece
+Validation,Majority_Empirical_Prior (BRCA),1549,33,10.717,3.03,0.587,2.075,0.325,3.03,3.2499,21.046,0.031
+Validation,Majority_Hard_OneHot (BRCA),1549,33,10.717,3.03,0.587,2.075,0.325,3.03,30.8374,16.333,89.283
+Validation,Uniform_Random (1/33),1549,33,3.03,3.03,2.666,3.394,3.03,3.03,3.4965,9.091,0.0
+Test,Majority_Empirical_Prior (BRCA),1549,33,10.717,3.03,0.587,2.075,0.325,3.03,3.2499,21.046,0.031
+Test,Majority_Hard_OneHot (BRCA),1549,33,10.717,3.03,0.587,2.075,0.325,3.03,30.8374,16.333,89.283
+Test,Uniform_Random (1/33),1549,33,3.03,3.03,2.666,3.394,3.03,3.03,3.4965,9.091,0.0
